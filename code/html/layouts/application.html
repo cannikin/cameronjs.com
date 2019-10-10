@@ -1,73 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>@@title</title>
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/application.css" />
-    <script type="text/javascript" src="/javascripts/application.js"></script>
-  </head>
-
-  <body class="bg-white text-gray-700 font-sans antialiased" data-controller="application welcome">
-    <header class="flex items-center justify-between py-4 px-4 lg:px-8 text-left border-gray-200 border-b">
-      <div class="flex">
-        <a class="flex items-center" href="/">
-          <img class="block mr-2 w-6" src="/images/logo.svg" alt="CameronJS Logo" />
-          <h1 class="text-3xl font-light leading-none text-gray-700">
-            Cameron<span class="font-thin text-red-700">JS</span>
-          </h1>
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a class="font-semibold" href="https://github.com/cannikin/cameronjs">GitHub</a></li>
-        </ul>
-      </nav>
-    </header>
-
+  @@include("layouts/head.html", { "title": "@@title" })
+  <body class="bg-white text-gray-700 font-sans" data-controller="application welcome">
+    @@include("header.html")
     <div class="w-full max-w-screen-xl min-h-screen mx-auto px-6">
       <div class="flex">
-        <aside class="hidden md:block md:w-1/4 lg:w-1/5 mt-2 mr-8">
-          <nav data-controller="nav" data-nav-active-class="bg-red-100 text-red-600">
-            <h3>Getting Started</h3>
-            <ul>
-              <li><a href="/getting-started/index.html" data-target="nav.link">Installation</a></li>
-              <li><a href="/getting-started/local-dev.html" data-target="nav.link">Local Development</a></li>
-              <li><a href="/getting-started/customization.html" data-target="nav.link">Customization</a></li>
-              <li><a href="/getting-started/welcome.html" data-target="nav.link">First Install Welcome</a></li>
-            </ul>
-
-            <h3>Core Concepts</h3>
-            <ul>
-              <li><a href="/core-concepts/index.html" data-target="nav.link">HTML, Layouts & Partials</a></li>
-              <li><a href="/core-concepts/javascript.html" data-target="nav.link">Javascript</a></li>
-              <li><a href="/core-concepts/css.html" data-target="nav.link">CSS</a></li>
-              <li><a href="/core-concepts/functions.html" data-target="nav.link">Functions</a></li>
-            </ul>
-
-            <h3>Deployment</h3>
-            <ul>
-              <li><a href="/deployment/index.html" data-target="nav.link">Building</a></li>
-              <li><a href="/deployment/netlify.html" data-target="nav.link">Netlify</a></li>
-            </ul>
-
-            <h3>A Complete Application</h3>
-            <ul>
-              <li><a href="/first-app/index.html" data-target="nav.link">Introduction</a></li>
-              <li><a href="/first-app/landing.html" data-target="nav.link">Landing Page</a></li>
-              <li><a href="/first-app/forms.html" data-target="nav.link">Collecting Emails with Forms</a></li>
-              <li><a href="/first-app/functions.html" data-target="nav.link">API & Functions</a></li>
-              <li><a href="/first-app/api.html" data-target="nav.link">Calling the API</a></li>
-              <li><a href="/first-app/email.html" data-target="nav.link">Email the Weather</a></li>
-              <li><a href="/first-app/sms.html" data-target="nav.link">SMS the Weather</a></li>
-              <li><a href="/first-app/login.html" data-target="nav.link">Login & Authentication</a></li>
-              <li><a href="/first-app/going-further.html" data-target="nav.link">Going Further</a></li>
-            </ul>
-
-          </nav>
-        </aside>
+        @@include("nav.html")
         <main class="w-full md:3/4 lg:w-4/5 max-w-3xl">
           @@content
         </main>
