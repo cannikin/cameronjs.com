@@ -725,10 +725,10 @@ camelcase@^5.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
-cameronjs-html-webpack-plugin@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/cameronjs-html-webpack-plugin/-/cameronjs-html-webpack-plugin-0.4.1.tgz#a44636929fdba0fe3a830d6278fba28a5b2c5bcf"
-  integrity sha512-fwWMeCHQOdx4f8P18fMwyY7DLA0x8Udv+XZIs1R2k8pxcxwnkzAmpk5/CDn8MWZFT88Ac/IAdesgI9pLpLaeyQ==
+cameronjs-html-webpack-plugin@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/cameronjs-html-webpack-plugin/-/cameronjs-html-webpack-plugin-0.4.2.tgz#9d49779701157691501c4c5a5f44f8dae50d629c"
+  integrity sha512-Ig5VsaT7fAlSqBTW32eh/gJL5GpL2xdvw2tjTyIMJGA/Zpcnkz9f2rPbheHmqzaFgDasfrw+sXy3K7NtLC5LbA==
 
 caniuse-lite@^1.0.30000989, caniuse-lite@^1.0.30000998:
   version "1.0.30000999"
