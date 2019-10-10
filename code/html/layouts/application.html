@@ -1,14 +1,60 @@
-<!-- See https://cameronjs.com/layouts for info on Layouts -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>cameronjs.com</title>
+    <title>my_app2</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/application.css" />
-    <script src="/javascripts/application.js"></script>
+    <script type="text/javascript" src="/javascripts/application.js"></script>
   </head>
-  @@content
+
+  <body class="bg-white text-gray-700 font-sans antialiased" data-controller="application welcome">
+    <header class="flex items-center justify-between py-4 px-4 lg:px-8 text-left border-gray-200 border-b">
+      <div class="flex">
+        <a class="flex items-center" href="/">
+          <img class="block mr-2 w-6" src="/images/logo.svg" alt="CameronJS Logo" />
+          <h1 class="text-3xl font-light leading-none text-gray-700">
+            Cameron<span class="font-thin text-red-700">JS</span>
+          </h1>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="font-semibold" href="https://github.com/cannikin/cameronjs">GitHub</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="w-full max-w-screen-xl min-h-screen mx-auto px-6">
+      <div class="flex">
+        <aside class="hidden md:block md:w-1/4 lg:w-1/5 mt-2 mr-8">
+          <nav data-controller="nav" data-nav-active-class="bg-red-100 text-red-600">
+            <h3>Getting Started</h3>
+            <ul>
+              <li><a href="/intro.html" data-target="nav.link">Introduction</a></li>
+              <li><a href="/first-app.html" data-target="nav.link">First App</a></li>
+            </ul>
+
+            <h3>Core Concepts</h3>
+            <ul>
+              <li><a href="/javascript.html" data-target="nav.link">Javascript</a></li>
+              <li><a href="/stimulusjs.html" data-target="nav.link">StimulusJS</a></li>
+              <li><a href="/css.html" data-target="nav.link">CSS</a></li>
+              <li><a href="/tailwindcss.html" data-target="nav.link">TailwindCSS</a></li>
+            </ul>
+
+            <h3>More</h3>
+            <ul>
+              <li><a href="/welcome.html" data-target="nav.link">First Install Welcome</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <main class="w-full md:3/4 lg:w-4/5 max-w-3xl">
+          @@content
+        </main>
+      </div>
+    </div>
+  </div>
 </html>
