@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include("layouts/head.html", { "title": "CameronJS: A simple framework for awesome apps" })
-<body class="bg-white text-gray-700 font-sans" data-controller="application welcome">
+<body class="bg-white text-gray-700 font-sans antialiased" data-controller="application welcome">
   @@include("header.html")
 
   <div class="w-full bg-gray-200 p-12">
     <div class="container mx-auto">
-      <div class="flex items-start mt-8">
-        <div class="w-3/5 pr-4">
-          <h3 class="text-4xl font-thin leading-tight text-gray-600">
-            Most frameworks try to do everything,<br>
+      <div class="text-center items-start my-8 xl:flex">
+        <div class="mx-auto max-w-3xl xl:w-64 xl:mx-0 xl:w-1/2 xl:pr-4 xl:text-left">
+          <h3 class="text-5xl font-light leading-tight tracking-tight text-gray-700 xl:text-4xl">
+            Most frameworks try to do everything.<br>
             <span class="text-red-600 font-light">CameronJS does just enough.</span>
           </h3>
-          <p class="mt-6 max-w-xl text-xl font-light text-gray-600">
-            CameronJS is a simple framework that takes plain HTML, CSS and Javascript and adds just
-            enough smart bits to make building websites as easy as it should be.
-          </p>
-          <p class="mt-4 max-w-xl text-xl font-light text-gray-600">
-            When you're ready, you can access and create your own APIs with serverless functions
-            via <a class="underline" href="https://netlify.com">Netlify</a>.
-          </p>
-          <h3 class="mt-4 text-xl font-normal text-gray-600">CameronJS is a simple framework for awesome apps.</h3>
+          <div class="mt-6 max-w-2xl mx-auto text-xl font-light text-gray-600 xl:leading-relaxed "
+            <p class="">
+              CameronJS takes plain HTML, CSS and Javascript and adds just
+              enough smart bits to make building websites as easy as it should be. When you're ready,
+              you can access and create your own APIs with serverless functions
+              via <a class="underline" href="https://netlify.com">Netlify</a>.
+            </p>
+            <h3 class="mt-4 font-normal text-gray-600">CameronJS is a simple framework for awesome apps.</h3>
+          </div>
         </div>
-        <div class="w-2/5 pl-4">
-          <img src="https://figma.imgix.net/NsI9dszPgxFxhLjzM9Ut8/37e4b7f035458b71862d28ea9cdf2170/How_to_Wireframe.png?&w=2120&auto=compress%2Cformat&crop=entropy&fit=crop&q=75" />
+        <div class="mt-12 mx-auto max-w-xl mt-4 pl-4 xl:mx-0">
+          <img src="/images/hero-diagram.png" />
         </div>
       </div>
     </div>
